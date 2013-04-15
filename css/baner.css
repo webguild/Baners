@@ -1,0 +1,563 @@
+/* CSS Document */
+@charset "utf-8";
+/* =General
+--------------------------------------------------------------------------------------------------------*/
+
+
+@font-face {
+    font-family: 'gotham_proregular';
+    src: url('gothaproreg.eot');
+    src: url('gothaproreg.eot?#iefix') format('embedded-opentype'),
+         url('gothaproreg.woff') format('woff'),
+         url('gothaproreg.ttf') format('truetype'),
+         url('gothaproreg.svg#gotham_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gotham_probold';
+    src: url('gothaprobol.eot');
+    src: url('gothaprobol.eot?#iefix') format('embedded-opentype'),
+         url('gothaprobol.woff') format('woff'),
+         url('gothaprobol.ttf') format('truetype'),
+         url('gothaprobol.svg#gotham_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Usual Baner Normal Size*/
+.baner {
+	width: 238px;
+	height: 398px;
+	border: #999999 1px solid;
+	position: relative;
+	text-align: center;
+}
+
+.bnr-logo {
+	margin: 0;
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	position:relative;
+}
+
+.bnr-logo img {
+	vertical-align: middle;
+	display:inline-block;
+	max-height: 92%;
+	max-width: 68%;
+}
+
+
+
+.bnr-prevu {
+	position:relative;
+}
+
+.bnr-imgwrap {
+	overflow: hidden;
+	height: 180px;
+}
+
+.bnr-imgwrap img {
+	max-width: 170px;
+	margin-top: -10%;
+}
+
+.bnr-title {
+	font-family: 'gotham_proregular';
+	font-size: 16px;
+	letter-spacing: -1;
+	color: #000;
+	margin-top: 7px;
+	font-weight: normal;
+}
+
+.bnr-price {
+	position: absolute;
+	top: 138px;
+	display: inline-block;
+	margin-left:-62px;
+	color: #ffffff;
+	background: #f1ae1e;
+	font-size: 18px;
+	padding: 12px 5px 9px;
+	font-family: 'gotham_proregular';
+	opacity: 0.8;
+	filter: alpha(opacity='80');	
+	width: 118px;
+	text-align: center;
+	font-weight: normal;
+}
+
+.bnr-price del {
+	display: none;
+}
+
+.bnr-button {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	display: inline-block;
+	padding: 0px 22px 0px 32px;
+	background: url(../img/sprite.png) -2px -91px no-repeat;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 12px;
+	font-family: 'gotham_probold';
+	font-weight: normal;
+	line-height: 29px;
+	height: 29px;
+	margin: 13px 10px 0 0;
+}
+
+.bnr-button span {
+	position: absolute;
+	top: 0;
+	right: -10px;
+	display: inline-block;
+	width: 10px;
+	height: 29px;
+	background: url(../img/sprite.png) -529px -91px no-repeat;
+}
+
+.bnr-prev, .bnr-next {
+	position: absolute;
+	background: #6fb935;
+	top: 128px;
+	height: 42px;
+	width: 24px;
+	opacity: 0.5;
+	filter: alpha(opacity='50');
+	text-align: center;
+	right: 0;
+	cursor: pointer;
+}
+
+.bnr-prev span, .bnr-next span {
+	display: inline-block;
+	background: url(../img/sprite.png) -1px -1px  no-repeat;
+	height: 18px;
+	width: 12px;
+	margin-top: 12px;
+}
+
+.bnr-next span {
+	background-position: -88px -1px;
+}
+
+.bnr-prev {
+	left: 0;
+}
+
+.baner.usual .bnr-cosial {
+	display: none;
+}
+
+.bnr-fb, .bnr-vk, .bnr-ok {
+	background: url(../img/sprite.png) ;
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	vertical-align: middle;
+}
+
+.bnr-fb { background-position: -771px -1px; }
+.bnr-vk { background-position: -771px -62px; }
+.bnr-ok { background-position: -771px -126px; }
+
+.bnr-tumbnails {
+	overflow: hidden;
+	margin: 22px 0 5px 9px;
+}
+
+.bnr-tumbnails li {
+	float: left;
+	border: #cccccc 1px solid;
+	margin-right: 7px; 	
+	background: #999999;
+	width: 48px;
+	height: 48px;
+	position: relative;
+	cursor: pointer;
+}
+
+.bnr-tumbnails li.active {
+	background: none;
+	border-color: #666;
+	cursor: default;
+}
+
+.bnr-tumbnails .bnr-title, .bnr-tumbnails .bnr-price, 
+.bnr-tumbnails .bnr-button, .bnr-tumbnails .bnr-cosial {
+	display: none;
+}
+.bnr-tumbnails img {
+	margin: 0;
+	width: 100%;
+	opacity: 0.5;
+	filter: alpha(opacity='50');
+}
+
+.bnr-tumbnails .active img {
+	opacity: 1;
+	filter: alpha(opacity='100');
+}
+.bnr-tumbnails .bnr-imgwrap {
+	height: 100%;
+}
+
+/* Usual Baner Long Size*/
+.baner.long {
+	width: 158px;
+	height: 598px
+}
+
+.long .bnr-logo img {
+	max-width: 145px;
+}
+
+.long .bnr-prevu {
+	margin-top: 77px;
+}
+
+.long .bnr-imgwrap {
+	max-height: 126px;
+}
+
+.long .bnr-imgwrap img {
+	max-width: 110px;
+}
+
+.long .bnr-price{
+	font-size: 11px;
+	top: 93px;
+	width: 80px;
+	margin-left: -45px
+}
+
+.long .bnr-prev, .long .bnr-next {
+	top: 180px;
+	width: 30px;
+}
+
+.long .bnr-title {
+	margin-top: 15px;
+	font-size: 11px;
+}
+
+.long .bnr-button {
+	padding: 0px 15px 0px 25px;
+	margin: 28px 10px 0 0;
+}
+
+.long .bnr-tumbnails {
+	margin: 74px 0 0 7px;
+}
+
+.long .bnr-tumbnails li {
+	width: 67px;
+	height: 67px;
+	margin: 0 6px 6px 0;
+}
+
+
+/* Usual Baner Quadratic Size*/
+.baner.quadratic {
+	width: 298px;
+	height: 248px
+}
+
+.quadratic .bnr-logo {
+	height: 35px;
+	line-height: 35px;
+	
+	text-align: right;
+}
+
+.quadratic .bnr-prevu {
+	margin-top: 0;
+}
+
+.quadratic .bnr-logo img {
+	max-width: 131px;
+}
+
+.quadratic .bnr-imgwrap {
+	height: 91px;
+}
+
+.quadratic .bnr-imgwrap img {
+ 	max-width: 85px;
+	margin-top: -5%;
+}
+
+.quadratic .bnr-prev, .quadratic .bnr-next {
+	top: 59px;
+	right: 10px;
+	height: 50px;
+	width: 30px;
+}
+
+.quadratic .bnr-prev {
+	left: 10px;
+}
+
+.quadratic .bnr-prev span, .quadratic .bnr-next span {
+	margin-top: 17px;
+}
+
+.quadratic .bnr-title {
+	margin: 40px 0 10px;
+}
+
+.quadratic .bnr-price {
+	position: static;
+	display: inline-block;
+	margin: 0 8px 0 0;
+	vertical-align: middle;
+}
+
+.quadratic .bnr-button {
+	vertical-align: middle;
+	margin:0;
+}
+
+.quadratic .bnr-tumbnails {
+	position: absolute;
+	bottom: 84px;
+	left: 50%;
+	width: 160px;
+	margin-left: -75px;
+}
+
+.quadratic .bnr-tumbnails li {
+	width: 28px;
+	height: 28px;
+	margin-right:10px;
+}
+
+.quadratic .bnr-tumbnails .bnr-price {
+	display: none;
+}
+
+.quadratic .bnr-tumbnails .bnr-imgwrap {
+	height: 100%;
+}
+
+
+
+/* Social Baner Noramal Size */
+
+
+
+.social .bnr-next, .social .bnr-prev {
+	background: #363636;
+	opacity: 0.8;
+	filter: alpha(opacity='80');
+
+}
+
+.social .bnr-next:hover, .social .bnr-prev:hover {
+	background: #fff100;
+}
+
+.social .bnr-next:hover span {
+	background-position: -253px 0px;
+}
+
+.social .bnr-prev:hover span {
+	background-position: -197px 0px;
+}
+
+.social .bnr-price {
+	background: #333;
+}
+
+
+
+.social .bnr-prevu {
+	position: relative;
+
+}
+
+.social.normal .bnr-tumbnails {
+	display: none;
+}
+
+.bnr-cosial {
+	font: 14px 'Arail', sans-serif;
+	color: #333;
+	margin-top: 30px;
+
+}
+
+.social .bnr-cosial span {
+	display: block;
+}
+
+.social .bnr-button {
+	background-position: -2px -223px;
+	height: 30px;
+	color: #000;
+}
+.social .bnr-button span{
+ 	background-position:  -481px -223px;
+	height: 30px;
+ }
+
+
+/* Social Baner Long Size */
+.social.long .bnr-title {
+	position: absolute;
+	top: -30px;
+	margin-top: 0;
+	width: 100%;
+}
+
+.social.long .bnr-prevu {
+	margin-top: 90px;
+}
+
+.social.long .bnr-next, .social.long .bnr-prev {
+	top: 168px;
+}
+
+.social.long .bnr-button {
+	margin-top: 15px;
+}
+
+.social.long .bnr-cosial {
+	position: absolute;
+	bottom: -285px;
+	font-size: 13px;
+	width: 100%;
+}
+
+.social.long .bnr-tumbnails {
+	margin-top: 40px;
+}
+
+.social.long .bnr-cosial span {
+	margin-bottom: 5px;
+}
+
+
+/* Social Baner Quadratic Size */
+.social.quadratic .bnr-tumbnails {
+	display: none;
+}
+
+.social.quadratic .bnr-title {
+	margin-top: 4px;
+}
+
+.social.quadratic .bnr-cosial {
+	margin-top: 7px;
+}
+
+/* Metro stail Baner Normal Size */
+
+.metro.baner {
+	border-color: #ccc;
+	background: #310540;
+}
+
+.metro .bnr-logo {
+	position: absolute;
+	bottom: 2px;
+	text-align: left;
+	height: 25px;
+	line-height: 25px;
+}
+
+.metro .bnr-prevu {
+	margin: 7px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.metro .bnr-tumbnails , .metro .bnr-cosial {
+	display: none;
+}
+
+.metro .bnr-next, .metro .bnr-prev {
+	width: 37px;
+	height: 44px;
+	background: #000;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	top: 103px;
+	right: 7px;
+}
+
+.metro .bnr-prev {
+	left: 7px;
+}
+
+.metro .bnr-next span, .metro .bnr-prev span {
+	background: url(../img/sprite.png) -83px -47px no-repeat;
+	height: 27px;
+	width: 16px;
+	margin-top: 9px;
+}
+
+.metro .bnr-prev span {
+	background-position: -1px -47px;
+}
+
+.metro .bnr-title {
+	color: #fff;
+	background: url(../img/1px.png);
+	text-align: left;
+	padding: 11px 0 0 16px;
+	text-transform: uppercase;
+	margin-top: 76px;
+
+}
+
+.metro .bnr-price {
+	position: static;
+	background: url(../img/1px.png);
+	opacity: 1;
+	filter: alpha(opacity=100);
+	display: block;
+	margin: 0;
+	width: auto;
+	padding:15px 0 13px 16px;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 15px;
+
+}
+
+.metro .bnr-price del {
+	color: #d59123;
+	font-size: 11px;
+	display: block;
+}
+
+.metro .bnr-button {
+	background: #d59123;
+	position:absolute;
+	right: 1px;
+	top: 284px; 
+	padding: 0;
+	height: 36px;
+	width: 94px;
+	font: 16px 'Trebuched MS';
+	line-height: 36px;
+	left: auto;
+}
+
+.metro .bnr-button span {
+	display: none;
+}

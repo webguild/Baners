@@ -1,0 +1,252 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>baners</title>
+    <link rel="stylesheet" href="css/baner.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="baner.js"></script>
+    <style>
+        * {  margin: 0; padding: 0; outline:0; font-size: 100%; vertical-align: baseline; background: transparent;}
+        h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, fieldset, table, ul { margin: 0; }
+        .clear {clear: both;font-size:0; line-height:0;}
+        img {border: 0;}
+        ol,ul,nav { list-style:none;}
+        :focus {outline: 0;}
+        html{  height:100%;}
+        aside, nav, footer, header, section { display: block }
+
+
+        #mainarea{
+            margin:0 auto;
+            width: 1000px;
+        }
+
+        .selectors {
+            margin: 20px 0;
+        }
+
+        .selectors select {
+            margin: 0 10px;
+        }
+
+        #list {
+            overflow: hidden;
+        }
+
+        #list > li {
+            float: left;
+            width: 500;
+        }
+
+
+    </style>
+</head>
+<body>
+	<div id="mainarea">
+        <ul id="list">
+            <li>
+                <p class="selectors">
+                    <label>Стиль: 
+                    <select name="style" >
+                        <option value="usual">Обычный </option>
+                        <option value="social">Соцсети </option>
+                        <option value="video">Видео</option>
+                        <option value="metro" selected>Метро</option>
+                        <option value="treed">3-D</option>
+                    </select></label>
+
+                    <label>Размер: 
+                    <select name="size" >
+                        <option value="normal" selected>200x400</option>
+                        <option value="long">160x600</option>
+                        <option value="quadratic">300x250</option>
+                        <option value="wide">728x90</option>
+                    </select></label>   
+                </p>
+
+                <!-- Банер Детской одежды -->
+                <div class="baner usual normal">
+                    <a href="" class="bnr-logo">&nbsp;<img src="uploads/logo.png"></a>
+
+                    <div class="bnr-prevu">
+                        <div class="bnr-imgwrap">
+                            <img src="uploads/child.jpg" title="Дождевик" />
+                        </div>
+                        <h3 class="bnr-title">Дождевик</h3>
+                        <h3 class="bnr-price">2 990 руб.<del>2 990 руб.</del></h3>
+                        <a href="#" class="bnr-button">Купить<span></span></a>
+                        <p class="bnr-cosial">Поделиться с друзьями: 
+                            <a href="#" class="bnr-fb"></a>
+                            <a href="#" class="bnr-vk"></a>
+                            <a href="#" class="bnr-ok"></a>
+                        </p>
+                    </div>
+                    <span class="bnr-prev"><span></span></span>
+                    <span class="bnr-next"><span></span></span>
+
+                    <ul class="bnr-tumbnails">
+                        <li>
+                            <div class="bnr-imgwrap">
+                                <img src="uploads/child.jpg" title="Дождевик" />
+                            </div>
+                            <h3 class="bnr-title">Дождевик</h3>
+                            <h3 class="bnr-price">2 990 руб.<del>2 990 руб.</del></h3>
+                            <a href="#" class="bnr-button">Купить<span></span></a>
+                            <p class="bnr-cosial">Поделиться с друзьями: 
+                                <a href="#" class="bnr-fb"></a>
+                                <a href="#" class="bnr-vk"></a>
+                                <a href="#" class="bnr-ok"></a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="bnr-imgwrap">
+                                <img src="uploads/child.jpg" title="Дождевик" />
+                            </div>
+                            <h3 class="bnr-title">Дождевик</h3>
+                            <h3 class="bnr-price">2 990 руб.</h3>
+                            <a href="#" class="bnr-button">Купить<span></span></a>
+                            <p class="bnr-cosial">Поделиться с друзьями: 
+                                <a href="#" class="bnr-fb"></a>
+                                <a href="#" class="bnr-vk"></a>
+                                <a href="#" class="bnr-ok"></a>
+                            </p>
+                        </li>
+                        <li>
+                             <div class="bnr-imgwrap">
+                                <img src="uploads/child.jpg" title="Дождевик" />
+                            </div>
+                            <h3 class="bnr-title">Дождевик</h3>
+                            <h3 class="bnr-price">2 990 руб.</h3>
+                            <a href="#" class="bnr-button">Купить<span></span></a>
+                            <p class="bnr-cosial">Поделиться с друзьями: 
+                                <a href="#" class="bnr-fb"></a>
+                                <a href="#" class="bnr-vk"></a>
+                                <a href="#" class="bnr-ok"></a>
+                            </p>
+                        </li>
+                        <li>
+                             <div class="bnr-imgwrap">
+                                <img src="uploads/child.jpg" title="Дождевик" />
+                            </div>
+                            <h3 class="bnr-title">Дождевик</h3>
+                            <h3 class="bnr-price">2 990 руб.</h3>
+                            <a href="#" class="bnr-button">Купить<span></span></a>
+                            <p class="bnr-cosial">Поделиться с друзьями: 
+                                <a href="#" class="bnr-fb"></a>
+                                <a href="#" class="bnr-vk"></a>
+                                <a href="#" class="bnr-ok"></a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>    
+        
+            </li>
+            <li>
+                <p class="selectors">
+                    <label>Стиль: 
+                    <select name="style" >
+                        <option value="usual">Обычный </option>
+                        <option value="social" selected>Соцсети </option>
+                        <option value="video">Видео</option>
+                        <option value="metro">Метро</option>
+                        <option value="treed">3-D</option>
+                    </select></label>
+
+                    <label>Размер: 
+                    <select name="size" >
+                        <option value="normal">200x400</option>
+                        <option value="long">160x600</option>
+                        <option value="quadratic" selected>300x250</option>
+                        <option value="wide">728x90</option>
+                    </select></label>   
+                </p>
+
+                <!-- Банер Детской одежды -->
+                <div class="baner social quadratic">
+                    <a href="#" class="bnr-logo">&nbsp;<img src="uploads/logo.png"></a>
+
+                    <div class="bnr-prevu"></div>
+                    <span class="bnr-prev"><span></span></span>
+                    <span class="bnr-next"><span></span></span>
+
+                    <ul class="bnr-tumbnails">
+                        <li class="active">
+                            <div class="bnr-imgwrap">
+                                <img src="uploads/child.jpg" title="Дождевик" />
+                            </div>
+                            <h3 class="bnr-title">Дождевик</h3>
+                            <h3 class="bnr-price">2 990 руб.<del>2 990 руб.</del></h3>
+                            <a href="#" class="bnr-button">Купить<span></span></a>
+                            <p class="bnr-cosial">Поделиться с друзьями: 
+                                <a href="#" class="bnr-fb"></a>
+                                <a href="#" class="bnr-vk"></a>
+                                <a href="#" class="bnr-ok"></a>
+                            </p>
+                        </li>
+                        <li>
+                            <div class="bnr-imgwrap">
+                                <img src="uploads/child.jpg" title="Дождевик" />
+                            </div>
+                            <h3 class="bnr-title">Дождевик</h3>
+                            <h3 class="bnr-price">2 990 руб.</h3>
+                            <a href="#" class="bnr-button">Купить<span></span></a>
+                            <p class="bnr-cosial">Поделиться с друзьями: 
+                                <a href="#" class="bnr-fb"></a>
+                                <a href="#" class="bnr-vk"></a>
+                                <a href="#" class="bnr-ok"></a>
+                            </p>
+                        </li>
+
+                        <li>
+                             <div class="bnr-imgwrap">
+                                <img src="uploads/child.jpg" title="Дождевик" />
+                            </div>
+                            <h3 class="bnr-title">Дождевик</h3>
+                            <h3 class="bnr-price">2 990 руб.</h3>
+                            <a href="#" class="bnr-button">Купить<span></span></a>
+                            <p class="bnr-cosial">Поделиться с друзьями: 
+                                <a href="#" class="bnr-fb"></a>
+                                <a href="#" class="bnr-vk"></a>
+                                <a href="#" class="bnr-ok"></a>
+                            </p>
+                        </li>
+                        <li>
+                             <div class="bnr-imgwrap">
+                                <img src="uploads/child.jpg" title="Дождевик" />
+                            </div>
+                            <h3 class="bnr-title">Дождевик</h3>
+                            <h3 class="bnr-price">2 990 руб.</h3>
+                            <a href="#" class="bnr-button">Купить<span></span></a>
+                            <p class="bnr-cosial">Поделиться с друзьями: 
+                                <a href="#" class="bnr-fb"></a>
+                                <a href="#" class="bnr-vk"></a>
+                                <a href="#" class="bnr-ok"></a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>    
+        
+            </li>
+        </ul>
+        
+	</div>
+
+    <script>
+        $(function () {
+            $('.selectors select').change( function () {
+                var classes = 'baner';
+                $(this).closest('p').find('select').each(function () {
+                    classes += ' ' +  $(this).val()
+                });
+                
+               $(this).closest('li').find('.baner').removeClass().addClass(classes);
+               
+            }).change();
+
+            $('.baner').interactiveBaner();
+        });
+        
+    </script>
+</body>
+</html>
