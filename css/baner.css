@@ -521,16 +521,19 @@
 	padding: 11px 0 0 16px;
 	text-transform: uppercase;
 	margin-top: 76px;
+	position:relative;
 
 }
 
 .metro .bnr-price {
-	position: static;
+	position: relative;
+	top:0;
+	left: 0;
 	background: url(../img/1px.png);
 	opacity: 1;
 	filter: alpha(opacity=100);
 	display: block;
-	margin: 0;
+	margin: 0 0 20px;
 	width: auto;
 	padding:15px 0 13px 16px;
 	text-transform: uppercase;
@@ -560,4 +563,13 @@
 
 .metro .bnr-button span {
 	display: none;
+}
+
+.metro .bnr-imgwrap {
+	overflow: visible;
+}
+
+.metro .bnr-imgwrap img {
+	max-width: 100%;
+	margin: 0;
 }
