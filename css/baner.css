@@ -179,10 +179,16 @@
 	margin: 22px 0 5px 9px;
 }
 
+.normal .bnr-tumbnails {
+	height: 50px;
+}
+
+
+
 .bnr-tumbnails li {
 	float: left;
 	border: #cccccc 1px solid;
-	margin-right: 7px; 	
+	margin: 0 7px 7px 0; 	
 	background: #999999;
 	width: 48px;
 	height: 48px;
@@ -234,7 +240,7 @@
 }
 
 .long .bnr-imgwrap img {
-	max-width: 110px;
+	max-width: 90px;
 }
 
 .long .bnr-price{
@@ -261,6 +267,7 @@
 
 .long .bnr-tumbnails {
 	margin: 74px 0 0 7px;
+	height: 150px;
 }
 
 .long .bnr-tumbnails li {
@@ -333,10 +340,11 @@
 
 .quadratic .bnr-tumbnails {
 	position: absolute;
-	bottom: 84px;
+	bottom: 77px;
 	left: 50%;
 	width: 160px;
 	margin-left: -75px;
+	height:37px;
 }
 
 .quadratic .bnr-tumbnails li {
@@ -360,7 +368,8 @@
 }
 .wide .bnr-logo {
 	float: right;
-	margin-top:5px;
+	height: 35px;
+	line-height: 35px;
 }
 
 .wide .bnr-logo img{
@@ -412,6 +421,9 @@
 	position: absolute;
 	top: 20px;
 	right: 0;
+	width: 100px;
+	width: 148px;
+	height: 37px;
 }
 
 .wide .bnr-tumbnails li {
@@ -422,6 +434,8 @@
 .wide .bnr-tumbnails .bnr-imgwrap {
 	margin-top: 0;
 	float: none;
+	height: 100%;
+	width: auto;
 }
 
 
@@ -533,6 +547,26 @@
 	margin-top: 7px;
 }
 
+.social.quadratic .bnr-cosial span {
+	display: inline;
+}
+
+
+
+/* Social Baner Wide Size */
+.social.wide .bnr-tumbnails {
+	display: none;
+}
+
+.social.wide .bnr-cosial {
+	position:absolute;
+	right: 10px;
+	bottom: -7px;
+	text-align: center;
+	margin: 0;
+}
+
+
 /* Metro stail Baner Normal Size */
 
 .metro.baner {
@@ -608,6 +642,7 @@
 	text-transform: uppercase;
 	text-align: left;
 	font-size: 15px;
+	height: 29px;
 
 }
 
@@ -642,3 +677,108 @@
 	max-width: 100%;
 	margin: 0;
 }
+
+/* Metro stail Baner Long Size */
+.metro.long .bnr-logo {
+	text-align: center;
+	position: static;
+	height: 45px;
+	line-height: 45px;
+}
+
+.metro.long .bnr-prevu {
+	margin-top: 2px;
+	height: 531px;
+	position:relative;
+}
+
+.metro.long .bnr-imgwrap {
+	width: 400%;
+	height: 100%;
+	left: -150%;
+	position: relative;
+	max-height: none;
+}
+
+.metro.long .bnr-imgwrap img {
+	height: 100%;
+	max-width: none;
+}
+
+.metro.long .bnr-next, .metro.long .bnr-prev {
+	top: 180px;
+	width: 30px;
+}
+
+.metro.long .bnr-title {
+	margin-top: -121px;
+	padding-left: 8px;
+}
+
+.metro.long .bnr-button {
+	font-size: 10px;
+	height: 23px;
+	line-height: 23px;
+	width: 56px;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0;
+	top: 445px;
+	right: 6px;
+
+}
+.metro.long .bnr-price {
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 8px;
+}
+
+/* Metro stail Baner Quadratic Size */
+.metro.quadratic .bnr-logo {
+	height: 16px;
+	line-height: 16px;
+	padding-left: 4px;
+	bottom: 3px;
+}
+
+.metro.quadratic .bnr-prevu {
+	height: 221px;
+}
+
+.metro.quadratic .bnr-next, .metro .bnr-prev {
+	top: 58px;
+}
+
+.metro.quadratic .bnr-imgwrap img {
+	width: 100%;
+}
+
+.metro.quadratic .bnr-title {
+	margin: 36px 5px 0;
+	padding-left: 8px;
+}
+
+.metro.quadratic .bnr-price {
+	margin: 0 5px;
+	padding-left: 8px;
+	padding-bottom: 7px;
+}
+
+.metro.quadratic .bnr-button {
+	top: 166px;
+	right: 10px;
+}
+/* Metro stail Baner Wide Size */
+
+/* Video Baner Normal Size */
+
+/* Video Baner Long Size */
+
+/* Video Baner Quadratic Size */
+
+/* Video Baner Wide Size */
+
+/* 3-d Baner Normal Size */
+/* 3-d Baner Long Size */
+/* 3-d Baner Quadratic Size */
+/* 3-d Baner Wide Size */
