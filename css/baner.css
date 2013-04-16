@@ -353,12 +353,81 @@
 	height: 100%;
 }
 
+/* Usual Baner Wide Size*/
+.baner.wide {
+	width: 726px;
+	height: 88px
+}
+.wide .bnr-logo {
+	float: right;
+	margin-top:5px;
+}
+
+.wide .bnr-logo img{
+	max-width: 140px;
+	margin: 5px; 
+	
+}
+.wide .bnr-prevu {
+	margin: 0;
+	text-align: left;
+}
+.wide .bnr-imgwrap {
+	height: 88px;
+	width: 270px;
+	float: left;
+	margin-top: -7px;
+	text-align: center;
+}
+
+.wide .bnr-imgwrap img {
+	max-width: 90px;
+	margin-top: -5%;
+
+}
+
+
+.wide .bnr-prev, .wide .bnr-next {
+	top: 33px;
+	left: 9px;
+}
+
+.wide .bnr-next {
+	left: 230px;
+}
+
+.wide .bnr-price {
+	position: static;
+	display: inline-block;
+	margin: 8px 6px 0 0;
+	vertical-align: middle;
+}
+
+.wide .bnr-button {
+	vertical-align: middle;
+	margin-top: 10px;
+}
+
+.wide .bnr-tumbnails {
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+
+.wide .bnr-tumbnails li {
+	height: 28px;
+	width: 28px;
+}
+
+.wide .bnr-tumbnails .bnr-imgwrap {
+	margin-top: 0;
+	float: none;
+}
+
+
 
 
 /* Social Baner Noramal Size */
-
-
-
 .social .bnr-next, .social .bnr-prev {
 	background: #363636;
 	opacity: 0.8;
