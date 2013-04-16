@@ -745,7 +745,7 @@
 	height: 221px;
 }
 
-.metro.quadratic .bnr-next, .metro .bnr-prev {
+.metro.quadratic .bnr-next, .metro.quadratic .bnr-prev {
 	top: 58px;
 }
 
@@ -769,6 +769,27 @@
 	right: 10px;
 }
 /* Metro stail Baner Wide Size */
+.metro.wide .bnr-logo {
+
+}
+
+.metro.wide .bnr-prevu {
+	width: 264px;
+	height: 82px;
+	position:relative;
+}
+
+.metro.wide .bnr-imgwrap img {
+	width: 100%;
+}
+
+.metro.wide .bnr-next, .metro.wide .bnr-prev {
+	top: 22px;
+	right:10px;
+}
+.metro.wide .bnr-prev {
+	left:10px;
+}
 
 /* Video Baner Normal Size */
 
