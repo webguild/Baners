@@ -78,6 +78,7 @@
 	color: #000;
 	margin-top: 7px;
 	font-weight: normal;
+	white-space: nowrap;
 }
 
 .bnr-price {
@@ -570,7 +571,7 @@
 /* Metro stail Baner Normal Size */
 
 .metro.baner {
-	border-color: #ccc;
+	border-color: #999;
 	background: #310540;
 }
 
@@ -660,7 +661,7 @@
 	padding: 0;
 	height: 36px;
 	width: 94px;
-	font: 16px 'Trebuched MS';
+	font: 16px 'Trebuchet MS';
 	line-height: 36px;
 	left: auto;
 }
@@ -770,13 +771,23 @@
 }
 /* Metro stail Baner Wide Size */
 .metro.wide .bnr-logo {
-
+	width:187px;
+	height: 88px;
+	text-align:center;
+	line-height: 88px;
 }
 
 .metro.wide .bnr-prevu {
-	width: 264px;
+	width: 532px;
 	height: 82px;
+	margin-left:194px;
+	margin-top:3px;
 	position:relative;
+	background: none;
+}
+
+.metro.wide .bnr-imgwrap {
+	width: 264px;
 }
 
 .metro.wide .bnr-imgwrap img {
@@ -785,14 +796,98 @@
 
 .metro.wide .bnr-next, .metro.wide .bnr-prev {
 	top: 22px;
-	right:10px;
 }
 .metro.wide .bnr-prev {
+	left:194px;
+}
+
+.metro.wide .bnr-next {
+	left:421px;
+}
+
+.metro.wide .bnr-title {
+	margin-top: 5px;
+	padding:0;
 	left:10px;
+	background: none;
+	font-size:19px;
+}
+
+.metro.wide .bnr-price {
+	background: none;
+	font-family: 'Arial';
+	left:10px;
+	font-size:15px;
+}
+
+.metro.wide .bnr-price del {
+	font-size:11px;
+}
+
+.metro.wide .bnr-button {
+	top: 30px;
+	right: 65px;
 }
 
 /* Video Baner Normal Size */
+.video {
+	width: 240px;
+	height: 400px;
+	background: url(../img/video-bg-240x400.jpg) no-repeat;
+	border:0;
+}
 
+.video .bnr-prev, .video .bnr-next, .video .bnr-price {
+	display: none;
+}
+
+.video .bnr-cosial span {
+	display: block;
+	font-size: 16px;
+	color:#333;
+	font-family: 'Georgia';
+	font-style: italic;
+	margin-bottom: 8px;
+}
+
+.video .bnr-logo {
+	display: block;
+	height: 74px;
+	line-height: 74px;
+}
+
+.video .bnr-imgwrap {
+	height: 126px;	
+}
+
+.video .bnr-imgwrap img {
+	max-width: 228px;
+	width:228px; /* delete this line after content paste */
+	margin:0;	
+}
+
+.video .bnr-title {
+	margin-top:13px; 
+	font-size: 16px;
+	color: #333333;
+	font-family: 'Georgia';
+	font-weight: bold;
+}
+
+.video .bnr-button {
+	font-family: 'Arial';
+	font-size:14px;
+	color:#fff;
+	padding: 0px 8px 0px 18px;
+	height: 34px;
+	line-height: 34px;
+	background: url(../img/sprite.png) -2px -553px no-repeat;
+}
+
+.video .bnr-button span {
+	height: 34px;
+	background: url(../img/sprite.png) -480px -553px no-repeat;
+}
 /* Video Baner Long Size */
 
 /* Video Baner Quadratic Size */
