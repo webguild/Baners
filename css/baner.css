@@ -1064,6 +1064,94 @@
 .treed .bnr-cosial {
 	display: none;
 }
+
+.treed .bnr-prev {
+	width:37px;
+	height: 34px;
+	background: url(../img/sprite.png) -316px -1px no-repeat;
+	opacity: 1;
+	left:7px;
+	top:144px;
+	filter:alpha(opacity=100);
+}
+
+.treed .bnr-next {
+	width:37px;
+	height: 34px;
+	background: url(../img/sprite.png) -399px -1px no-repeat;
+	opacity: 1;
+	right:5px;
+	top:144px;
+	filter:alpha(opacity=100);
+}
+
+.treed .bnr-prev:hover {
+	background-position:-481px -1px;
+}
+
+.treed .bnr-next:hover {
+	background-position:-555px -1px ;
+}
+
+.treed .bnr-prev span, .treed .bnr-next span {
+	display: none;
+}
+
+.treed .bnr-price {
+	opacity: 1;
+	filter:alpha(opacity=100);
+	background: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color:#000;
+	font-family: 'Georgia';
+	width: 146px;
+	height: 48px;
+	padding:5px 0 0 0;
+	font-weight: bold;
+	font-size:20px;
+	font-style: italic;
+	position: static;
+	margin:14px 0 0 0;
+}
+
+.treed .bnr-price del {
+	display: block;
+	font-size: 13px;
+	color:#8e8e8e;
+	font-weight: normal;
+}
+
+.treed .bnr-title {
+	margin:0;
+	font-family: 'Arial';
+	letter-spacing: normal;
+	position: absolute;
+	width:100%;
+	text-align: center;
+	top:240px;
+	left: 0;
+	font-size: 16px;
+	color:#fff;
+}
+
+.treed .bnr-button {
+	background: #fff711;
+	height: 30px;
+	line-height: 30px;
+	font-size: 13px;
+	color:#000;
+	padding:0 33px;
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	margin:65px 0 0 0;
+}
+
+.treed .bnr-button span {
+	display: none;
+}
 /* 3-d Baner Long Size */
 /* 3-d Baner Quadratic Size */
 /* 3-d Baner Wide Size */
