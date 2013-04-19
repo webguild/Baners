@@ -39,7 +39,12 @@
 			this.activeThumb = 0;
 			this.setPrevu(false);
 
-			this.$el.on('click', '.bnr-prev', { self: this }, this.prevNextClick);
+			this.$el.on('mousedown', this.options.prevSelector + ',' + this.options.nextSelector, 
+				function () {return false;});
+			this.$el.on('selectstart', this.options.prevSelector + ',' + this.options.nextSelector, 
+				function () {return false;});
+
+			this.$el.on('click', this.options.prevSelector, { self: this }, this.prevNextClick);
 			this.$el.on('click', this.options.nextSelector, { self: this }, this.prevNextClick);
 			this.$el.on('click', this.options.thumbnailsSelector, { self: this }, this.thumbClick);
 		};	
@@ -76,6 +81,13 @@
 			
 			this.$thumbs.eq(this.activeThumb).addClass(this.options.activeClass)
 				.siblings('.'+ this.options.activeClass).removeClass(this.options.activeClass);
+			
+			var ofset = -this.$thumbs.eq(0).outerHeight(true) * parseInt(this.$thumbs.eq(this.activeThumb).index() / 4);
+			this.$thumbs.css({top: ofset});
+			/*this.$thumbs.eq(0).css({ 
+				'margin-top':
+				-this.$thumbs.parent().height() * parseInt(this.$thumbs.eq(this.activeThumb).index() / 4)
+			});*/
 
 			this.$prevu.fadeOut (animation ? 200: 0, function () {
 				self.$prevu.html( self.$thumbs.eq(self.activeThumb).html() );
