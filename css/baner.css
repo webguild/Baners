@@ -37,6 +37,10 @@
 	text-align: center;
 }
 
+.baner .bnr-slogan {
+	display: none;
+}
+
 .bnr-logo {
 	margin: 0;
 	display: block;
@@ -1154,6 +1158,192 @@
 .treed .bnr-button span {
 	display: none;
 }
+
+
 /* 3-d Baner Long Size */
+.treed.long {
+	width: 158px;
+	height: 598px;
+}
+
+.treed.long .bnr-slogan {
+	display: block;
+	position: absolute;
+	width:100%;
+	text-align: center;
+	top:100px;
+	left:0;
+	font-family: 'Arial';
+	font-size:19px;
+	color:#fff;
+	font-weight: bold;
+}
+
+.treed.long .bnr-imgwrap {
+	height: 97px;	
+}
+
+.treed.long .bnr-imgwrap img{
+	max-width: 72px;
+	width: 72px; /* delete */
+	margin-top: 0;
+}
+
+.treed.long .bnr-prev, .treed.long .bnr-next {
+	top: 234px;
+}
+
+.treed.long .bnr-prev {
+	left:4px;
+}
+
+.treed.long .bnr-next {
+	right:4px;
+}
+
+.treed.long .bnr-prevu {
+	margin-top:145px;
+}
+
+.treed.long .bnr-price {
+	margin-top:90px;
+}
+
+.treed.long .bnr-title {
+	margin-top:20px;
+}
+
+.treed.long .bnr-button {
+	margin-top:80px;
+}
+
 /* 3-d Baner Quadratic Size */
+.treed.quadratic {
+
+}
+
+.treed.quadratic .bnr-logo {
+	height:32px;
+	line-height: 32px;
+	padding-right: 10px
+}
+
+.treed.quadratic .bnr-prev, .treed.quadratic .bnr-next {
+	top: 100px;
+}
+
+.treed.quadratic .bnr-prev {
+	left:7px;
+}
+
+.treed.quadratic .bnr-next {
+	left:135px;
+}
+
+.treed.quadratic .bnr-imgwrap {
+	margin-top:22px;
+	height: 112px;
+	width: 178px;
+}
+
+.treed.quadratic .bnr-imgwrap img{
+	max-width: 83px;
+	width: 83px; /* delete */
+	margin-top: 0;
+}
+
+.treed.quadratic .bnr-title {
+	width:125px;
+	position: absolute;
+	top:2px;
+	left:170px;
+	font-size:16px;
+}
+
+.treed.quadratic .bnr-price {
+	position: absolute;
+	top:35px;
+	left:175px;
+	width:116px;
+	height: 50px;
+	font-size:17px;
+}
+
+.treed.quadratic .bnr-button {
+	width:116px;
+	height: 40px;
+	line-height: 40px;
+	padding:0;
+	text-align: center;
+	position: absolute;
+	left:175px;
+	top:115px;
+	margin:0;
+}
+
+
 /* 3-d Baner Wide Size */
+.treed.wide .bnr-logo {
+	height:32px;
+	line-height: 32px;
+}
+
+.treed.wide .bnr-prev, .treed.wide .bnr-next {
+	top: 23px;
+}
+
+.treed.wide .bnr-prev {
+	left:16px;
+}
+
+.treed.wide .bnr-next {
+	left:142px;
+}
+
+.treed.wide .bnr-imgwrap {
+	margin-top:5px;
+	height: 78px;
+	width: 190px;
+}
+
+.treed.wide .bnr-imgwrap img{
+	max-width: 58px;
+	width: 58px; /* delete */
+	margin-top: 0;
+}
+
+.treed.wide .bnr-title {
+	position: absolute;
+	top:10px;
+	left:-50px;
+	font-size:24px;
+	text-transform: uppercase;
+}
+
+.treed.wide .bnr-price {
+	position: absolute;
+	top:25px;
+	left:203px;
+	width:210px;
+	height: 40px;
+	font-size:17px;
+	text-align: right;
+	line-height: 40px;
+	padding: 0;
+	padding-right: 10px
+}
+
+.treed.wide .bnr-price del {
+	position: absolute;
+	top:0;
+	left:10px;
+}
+
+.treed.wide .bnr-button {
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	top:39px;
+	left:430px;
+	margin:0;
+}
