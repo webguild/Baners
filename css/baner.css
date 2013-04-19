@@ -830,6 +830,10 @@
 }
 
 /* Video Baner Normal Size */
+.video .bnr-tumbnails {
+	display: none;
+}
+
 .video {
 	width: 240px;
 	height: 400px;
@@ -888,13 +892,178 @@
 	height: 34px;
 	background: url(../img/sprite.png) -480px -553px no-repeat;
 }
+
 /* Video Baner Long Size */
+.video.long {
+	width: 160px;
+	height: 600px;
+	background: url(../img/video-bg-160x600.jpg) no-repeat;
+}
+
+.video.long .bnr-logo {
+	height: 58px;
+	line-height: 58px;
+}
+
+.video.long .bnr-imgwrap {
+	height: 83px;	
+}
+
+.video.long .bnr-imgwrap img {
+	max-width: 153px;
+	width:153px; /* delete this line after content paste */
+}
+
+.video.long .bnr-prevu {
+	margin-top: 0;
+}
+
+.video.long .bnr-title {
+	margin-top:13px; 
+	font-size: 14px;
+}
+
+.video.long .bnr-button {
+	margin:10px 10px 0 0;
+	font-family: 'gotham_probold';
+	font-size: 12px;
+}
+
+.video.long .bnr-cosial {
+	margin-top:295px;
+}
+
+.video.long .bnr-cosial span {
+	font-size:13px;
+	color:#fff;
+	letter-spacing: -1px;
+	text-shadow:#000 1px 1px 0;
+}
 
 /* Video Baner Quadratic Size */
+.video.quadratic {
+	width:298px;
+	height:248px;
+	border:1px solid #ccc;
+	background: #99958c;
+}
+
+.video.quadratic .bnr-logo {
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+
+.video.quadratic .bnr-imgwrap {
+	height: 100px;	
+}
+
+.video.quadratic .bnr-imgwrap img {
+	max-width: 183px;
+	width:183px; /* delete this line after content paste */
+}
+
+.video.quadratic .bnr-title {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.video.quadratic .bnr-button {
+	font-family: 'Arial';
+	font-size:14px;
+	font-weight: bold;
+}
+
+.video.quadratic .bnr-cosial {
+	margin-top:5px;
+}
+
+.video.quadratic .bnr-cosial span {
+	display: inline-block;
+	font-size: 13px;
+}
 
 /* Video Baner Wide Size */
+.video.wide {
+	width: 728px;
+	height: 90px;
+	background: url(../img/video-bg-728x90.jpg) no-repeat;
+	border: 0;
+	position: relative;
+}
 
+.video.wide .bnr-logo {
+	float:none;
+	width: 161px;
+	height: 90px;
+	line-height: 90px;
+}
+
+.video.wide .bnr-prevu {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+}
+
+.video.wide .bnr-imgwrap {
+	position: absolute;
+	top:14px;
+	left:161px;
+	height: 75px;
+	width:138px; /* delete this line after content paste */
+}
+
+.video.wide .bnr-imgwrap img {
+	max-width: 138px;
+	width:138px; /* delete this line after content paste */
+}
+
+.video.wide .bnr-title {
+	position: absolute;
+	top:5px;
+	left:310px;
+	margin-top:0;
+}
+
+.video.wide .bnr-button {
+	position: absolute;
+	top:35px;
+	left:310px;
+}
+
+.video.wide .bnr-cosial {
+	text-align: center;
+	width: 210px;
+	position: absolute;
+	top: 17px;
+	right: 10px;
+	margin-top: 0;
+}
 /* 3-d Baner Normal Size */
+.treed {
+	background: #ed1c29;
+	border:1px solid #999;
+}
+
+.treed .bnr-logo {
+	height: 55px;
+	line-height: 55px;
+}
+
+.treed .bnr-imgwrap {
+	height: 161px;	
+}
+
+.treed .bnr-imgwrap img{
+	max-width: 120px;
+	width: 120px; /* delete */
+	margin-top: 0;
+}
+
+.treed .bnr-cosial {
+	display: none;
+}
 /* 3-d Baner Long Size */
 /* 3-d Baner Quadratic Size */
 /* 3-d Baner Wide Size */
