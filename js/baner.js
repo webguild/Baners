@@ -6,9 +6,12 @@
 			var defaults = {
 				'prevuSelector' : '.bnr-prevu',
 				'prevSelector' : '.bnr-prev',
+				'turnSelector' : '.bnr-turn',
 				'nextSelector' : '.bnr-next',
 				'thumbnailsSelector' : '.bnr-tumbnails li',
-				'activeClass': 'active'
+				'activeClass': 'active',
+				'3DClass': 'treed',
+				'3DPrevuSelector' : '.bnr-3d li'
 			};
 
 			options = $.extend(options, defaults);
@@ -33,7 +36,12 @@
 		}
 
 		interactiveBaner.prototype.initialize = function () {
-			this.$thumbs = this.$el.find(this.options.thumbnailsSelector);
+			if ( this.$el.hasClass(this.options['3DClass']) )
+				this['3Dmode'] = true;
+			
+			this.$thumbs = this.$el.find(this['3Dmode'] 
+				? this.options['3DPrevuSelector'] 
+				: this.options.thumbnailsSelector);
 			this.$prevu = this.$el.find(this.options.prevuSelector);
 
 			this.activeThumb = 0;
@@ -46,7 +54,10 @@
 
 			this.$el.on('click', this.options.prevSelector, { self: this }, this.prevNextClick);
 			this.$el.on('click', this.options.nextSelector, { self: this }, this.prevNextClick);
+			this.$el.on('click', this.options.turnSelector, { self: this }, this.prevNextClick);
 			this.$el.on('click', this.options.thumbnailsSelector, { self: this }, this.thumbClick);
+
+
 		};	
 
 		interactiveBaner.prototype.thumbClick = function (e) {
@@ -79,20 +90,28 @@
 			var self = this;
 			animation = (animation === undefined) ? true : false;
 			
-			this.$thumbs.eq(this.activeThumb).addClass(this.options.activeClass)
+			if (self['3Dmode']) {
+				self.$prevu.find('.bnr-imgwrap').html(self.$thumbs.eq(self.activeThumb).html());
+			} else {
+
+				this.$thumbs.eq(this.activeThumb).addClass(this.options.activeClass)
 				.siblings('.'+ this.options.activeClass).removeClass(this.options.activeClass);
 			
-			var ofset = -this.$thumbs.eq(0).outerHeight(true) * parseInt(this.$thumbs.eq(this.activeThumb).index() / 4);
-			this.$thumbs.css({top: ofset});
-			/*this.$thumbs.eq(0).css({ 
-				'margin-top':
-				-this.$thumbs.parent().height() * parseInt(this.$thumbs.eq(this.activeThumb).index() / 4)
-			});*/
+				var ofset = -this.$thumbs.eq(0).outerHeight(true) * parseInt(this.$thumbs.eq(this.activeThumb).index() / 4);
+				this.$thumbs.css({top: ofset});
+				/*this.$thumbs.eq(0).css({ 
+					'margin-top':
+					-this.$thumbs.parent().height() * parseInt(this.$thumbs.eq(this.activeThumb).index() / 4)
+				});*/
 
-			this.$prevu.fadeOut (animation ? 200: 0, function () {
-				self.$prevu.html( self.$thumbs.eq(self.activeThumb).html() );
-				self.$prevu.fadeIn(animation ? 200: 0);
-			});
+				this.$prevu.fadeOut (animation ? 200: 0, function () {
+					self.$prevu.html( self.$thumbs.eq(self.activeThumb).html() );
+					self.$prevu.fadeIn(animation ? 200: 0);
+				});
+
+			}
+
+			
 		} 
 		
 

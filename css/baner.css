@@ -71,8 +71,8 @@
 }
 
 .bnr-imgwrap img {
-	max-width: 170px;
-	margin-top: -10%;
+	max-width: 100%;
+	
 }
 
 .bnr-title {
@@ -87,7 +87,7 @@
 
 .bnr-price {
 	position: absolute;
-	top: 138px;
+	top: 139px;
 	display: inline-block;
 	margin-left:-62px;
 	color: #ffffff;
@@ -184,6 +184,10 @@
 	margin: 22px 0 5px 9px;
 }
 
+.bnr-3d {
+	display: none;
+}
+
 .normal .bnr-tumbnails {
 	height: 50px;
 }
@@ -213,9 +217,11 @@
 }
 .bnr-tumbnails img {
 	margin: 0;
-	width: 100%;
+	width: 160%;
 	opacity: 0.5;
 	filter: alpha(opacity='50');
+	margin-left: -30%;
+	max-width: none;
 }
 
 .bnr-tumbnails .active img {
@@ -242,10 +248,6 @@
 
 .long .bnr-imgwrap {
 	max-height: 126px;
-}
-
-.long .bnr-imgwrap img {
-	max-width: 90px;
 }
 
 .long .bnr-price{
@@ -301,14 +303,15 @@
 
 .quadratic .bnr-logo img {
 	max-width: 131px;
+	margin-right: 5px;
 }
 
 .quadratic .bnr-imgwrap {
 	height: 91px;
 }
 
-.quadratic .bnr-imgwrap img {
- 	max-width: 85px;
+.quadratic .bnr-prevu > .bnr-imgwrap img {
+ 	max-height: 130%;
 	margin-top: -5%;
 }
 
@@ -373,8 +376,9 @@
 }
 .wide .bnr-logo {
 	float: right;
-	height: 35px;
+	max-height: 28px;
 	line-height: 35px;
+	position:relative;
 }
 
 .wide .bnr-logo img{
@@ -394,9 +398,9 @@
 	text-align: center;
 }
 
-.wide .bnr-imgwrap img {
-	max-width: 90px;
-	margin-top: -5%;
+.wide .bnr-prevu > .bnr-imgwrap img {
+	
+	height: 100%;
 
 }
 
@@ -683,6 +687,7 @@
 .metro .bnr-imgwrap img {
 	max-width: 100%;
 	margin: 0;
+	max-height: none;
 }
 
 /* Metro stail Baner Long Size */
@@ -781,6 +786,7 @@
 	height: 88px;
 	text-align:center;
 	line-height: 88px;
+	bottom: auto;
 }
 
 .metro.wide .bnr-prevu {
@@ -798,6 +804,7 @@
 
 .metro.wide .bnr-imgwrap img {
 	width: 100%;
+	height: auto;
 }
 
 .metro.wide .bnr-next, .metro.wide .bnr-prev {
@@ -882,6 +889,7 @@
 	color: #333333;
 	font-family: 'Georgia';
 	font-weight: bold;
+	white-space: normal;
 }
 
 .video .bnr-button {
@@ -961,7 +969,7 @@
 }
 
 .video.quadratic .bnr-imgwrap {
-	height: 100px;	
+	height: 95px;	
 }
 
 .video.quadratic .bnr-imgwrap img {
@@ -973,6 +981,11 @@
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
+
+.video.quadratic .bnr-title br {
+	display: none;
+}
+
 
 .video.quadratic .bnr-button {
 	font-family: 'Arial';
@@ -1159,6 +1172,21 @@
 	display: none;
 }
 
+.bnr-turn {
+	display: none;
+}
+
+.treed .bnr-turn {
+	background: url(../img/sprite.png) -647px -7px;
+	display: block;
+	height: 30px;
+	width: 43px;
+	position: absolute;
+	left:180px;
+	top: 195px;
+	cursor: pointer;
+}
+
 
 /* 3-d Baner Long Size */
 .treed.long {
@@ -1191,6 +1219,12 @@
 
 .treed.long .bnr-prev, .treed.long .bnr-next {
 	top: 234px;
+}
+
+.treed.long .bnr-turn {
+	left: 50%;
+	margin-left: -21px;
+	top: 295px;
 }
 
 .treed.long .bnr-prev {
@@ -1240,6 +1274,12 @@
 	left:135px;
 }
 
+.treed.quadratic .bnr-turn {
+	left: 82px;
+	margin-left: -21px;
+	top: 160px;
+}
+
 .treed.quadratic .bnr-imgwrap {
 	margin-top:22px;
 	height: 112px;
@@ -1258,6 +1298,7 @@
 	top:2px;
 	left:170px;
 	font-size:16px;
+	white-space: normal;
 }
 
 .treed.quadratic .bnr-price {
@@ -1300,6 +1341,11 @@
 	left:142px;
 }
 
+.treed.wide .bnr-turn {
+	left: 130px;
+	top: 60px;
+}
+
 .treed.wide .bnr-imgwrap {
 	margin-top:5px;
 	height: 78px;
@@ -1315,9 +1361,11 @@
 .treed.wide .bnr-title {
 	position: absolute;
 	top:10px;
-	left:-50px;
+	left:202px;
 	font-size:24px;
 	text-transform: uppercase;
+	text-align: left;
+	width: 445px;
 }
 
 .treed.wide .bnr-price {
@@ -1347,3 +1395,5 @@
 	left:430px;
 	margin:0;
 }
+
+
