@@ -91,15 +91,14 @@
 	display: inline-block;
 	margin-left:-62px;
 	color: #ffffff;
-	background: #f1ae1e;
+	background: url(../img/1px_alt.png);
 	font-size: 18px;
 	padding: 12px 5px 9px;
 	font-family: 'gotham_proregular';
-	opacity: 0.8;
-	filter: alpha(opacity='80');	
 	width: 118px;
 	text-align: center;
 	font-weight: normal;
+	left: 50%;
 }
 
 .bnr-price del {
@@ -473,7 +472,7 @@
 }
 
 .social .bnr-price {
-	background: #333;
+	background: url(../img/1px.png);
 }
 
 
